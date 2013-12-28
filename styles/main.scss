@@ -1,0 +1,70 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import "_partials/variables";
+@import '../bower_components/sass-bootstrap/lib/bootstrap';
+
+body{
+    text-align: center;
+}
+
+footer{
+    padding: 20px 0;
+
+    p{
+        margin-bottom: 0px;
+    }
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+
+.jumbotron{
+    text-align: center;
+    background: #c45268;
+    color: #fff;
+    margin-bottom: 0px;
+
+    h1{
+        font-weight: normal;
+    }
+
+    .lead{
+        font-family: $headings-font-family;
+    }
+}
+
+.nav-center{
+    float: none;
+    text-align: center;
+
+    li{
+        float: none;
+        display: inline-block;
+    }
+}
+
+.odd-panel{
+    background: #FAF0F2;
+    border-top: 1px solid darken(#FAF0F2, 10%);
+    padding-bottom: 20px;
+}
+
+.even-panel{
+    background: darken(#FAF0F2,10%);
+    border-top: 1px solid darken(#FAF0F2, 10%);
+    padding-bottom: 20px;
+}
+
+ul{
+    padding: 0;
+    margin: 20px 0;
+
+    li{
+        list-style: none;
+    }
+}
+
+pre{
+    text-align: left;
+}

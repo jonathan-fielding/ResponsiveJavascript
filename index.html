@@ -1,71 +1,179 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Responsivejavascript by jonathan-fielding</title>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ResponsiveJavascript</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Responsivejavascript</h1>
-        <p></p>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="scripts/vendor/modernizr.js"></script>
 
-        <p class="view"><a href="https://github.com/jonathan-fielding/ResponsiveJavascript">View the Project on GitHub <small>jonathan-fielding/ResponsiveJavascript</small></a></p>
+    </head>
+    <body>
 
+        <header>
 
-        <ul>
-          <li><a href="https://github.com/jonathan-fielding/ResponsiveJavascript/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/jonathan-fielding/ResponsiveJavascript/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/jonathan-fielding/ResponsiveJavascript">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                   <div>
+                        <ul class="nav navbar-nav nav-center">
+                            <li class="active"><a href="#">What is responsive javascript?</a></li>
+                            <li><a href="#">What are the API's?</a></li>
+                            <li><a href="#">Is their libraries?</a></li>
+                            <li><a href="#">Where can I find out more?</a></li>
+                            <li><a href="#">#responsivejavascript</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <div class="content" role="main">
+            <div class="jumbotron">
+                <div class="container">
+                    <h1>Responsive Javascript</h1>
+                    <p class="lead">Change the functionality of your site based on responsive state</p>
+                   <!--  <p><a class="btn btn-lg btn-success" href="#">Get Started</a></p> -->
+                </div>
+            </div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+            <div class="odd-panel">
+                <div class="container">
+                    <h2>What is responsive javascript?</h2>
+                    <p>Responsive Javascript is the title given to javascript which reacts to the state of the browser. This can include reacting to the size of the viewport, whether or not the display of your device supports touch events, whether geolocation is supported to name but a few examples.</p>
+                </div>
+            </div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+            <div class="even-panel">
+                <div class="container">
+                    <h2>What are the Browser API's?</h2>
+                    <p>The browsers provide us with 2 API's which allow us to create responsive javascript</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>window.matchMedia</h3>
+                            <p>The window.matchMedia API </p>
+                            <pre>var mql = window.matchMedia("(max-width:768px)");
+mql.addListener(function(e){
+        if(e.matches){
+                console.log('enter mobile');
+        }
+});</pre>
+                            <h4>Browser support</h4>
+                            <ul>
+                                <li>IE10+</li>
+                                <li>Chrome 9+</li>
+                                <li>Firefox 6+</li>
+                                <li>Safari 5.1+</li>
+                                <li>Android 3+</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>window.onResize</h3>
+                            <p>The window.matchMedia API </p>
+                            <pre>$(window).on('resize', function(){
+        if ($('body').width() < 768) {
+                console.log('mobile');
+        }
+});
+ </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="odd-panel">
+                <div class="container">
+                    <h2>Is their libraries?</h2>
+                    <p>There are a couple of popular libraries which can be used for responsive javascript</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>SimpleStateManager</h3>
+                            <img src="images/ssm.png" alt="" />
+                            <ul>
+                                <li>Uses browser on resize event</li>
+                                <li>Add your own tests and respond to anything js can test for</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>Enquire.js</h3>
+                            <img src="images/enquirejs.png" alt="" />
+                            <ul>
+                                <li>Uses matchMedia API</li>
+                                <li>Manages registering and unregistering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="even-panel">
+                <div class="container">
+                    <h2>Where can I find out more?</h2>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h3>Talks</h3>
+                            <ul>
+                                <li>London AJAX - Tuesday 13th November</li>
+                                <li>London Web Standards - Coming soon</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>Print Articles</h3>
+                            <h4>Net Mag issue 250</h4>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>Online Articles</h3>
+                            <ul>
+                                <li><a href="http://www.jonathanfielding.com/managing-responsive-design-breakpointstates-in-javascript/">Managing responsive design breakpoints in JS</a></li>
+                                <li><a href="http://www.jonathanfielding.com/getting-started-with-simplestatemanager-ssm/">Getting started with SimpleStateManager</a></li>
+                                <li><a href="http://css-tricks.com/enquire-js-media-query-callbacks-in-javascript/">Enquire.js – Media Query Callbacks in JavaScript</a></li>
+                                <li><a href="http://www.jonathanfielding.com/optimising-your-responsive-site/">Optimising your responsive site</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+        </div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+        <footer>
+            <div class="container">
+                <p>&copy; Copyright everyone.</p>
+            </div>
+        </footer>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+        <script src="scripts/vendor/jquery.min.js"></script>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+        <script src="scripts/main.js"></script>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/jonathan-fielding">jonathan-fielding</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+        <script src="scripts/vendor/affix.js"></script>
+        <script src="scripts/vendor/alert.js"></script>
+        <script src="scripts/vendor/dropdown.js"></script>
+        <script src="scripts/vendor/tooltip.js"></script>
+        <script src="scripts/vendor/modal.js"></script>
+        <script src="scripts/vendor/transition.js"></script>
+        <script src="scripts/vendor/button.js"></script>
+        <script src="scripts/vendor/popover.js"></script>
+        <script src="scripts/vendor/scrollspy.js"></script>
+        <script src="scripts/vendor/collapse.js"></script>
+        <script src="scripts/vendor/tab.js"></script>
+
+</body>
 </html>
