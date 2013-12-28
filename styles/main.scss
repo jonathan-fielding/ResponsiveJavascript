@@ -3,7 +3,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import "_partials/variables";
 @import '../bower_components/sass-bootstrap/lib/bootstrap';
 
-body{
+h1, h2, h3{
     text-align: center;
 }
 
@@ -67,4 +67,37 @@ ul{
 
 pre{
     text-align: left;
+}
+
+ul.browser-support{
+    margin-top: 0px;
+
+    li{
+        float: left;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 50px;
+        width: 50px;
+        background: url('../images/browsers.png') 0 0 no-repeat;
+
+        &.chrome{
+            background-position: 0 0;
+        }
+
+        &.firefox{
+            background-position: -50px 0;
+        }
+
+        &.ie{
+            background-position: -100px 0;
+        }
+
+        &.opera{
+            background-position: -150px 0;
+        }
+
+        &.safari{
+            background-position: -200px 0;
+        }
+    }
 }

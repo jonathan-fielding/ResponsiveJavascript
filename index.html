@@ -48,18 +48,19 @@
                 <div class="container">
                     <h2>What is responsive javascript?</h2>
                     <p>Responsive Javascript is the title given to javascript which reacts to the state of the browser. This can include reacting to the size of the viewport, whether or not the display of your device supports touch events, whether geolocation is supported to name but a few examples.</p>
+
                 </div>
             </div>
 
             <div class="even-panel">
                 <div class="container">
                     <h2>What are the Browser API's?</h2>
-                    <p>The browsers provide us with 2 API's which allow us to create responsive javascript</p>
+                    <p>The browsers provide us with 2 key API's which allow us to add javascript to our site that can be responsive.</p>
 
                     <div class="row">
                         <div class="col-sm-6">
                             <h3>window.matchMedia</h3>
-                            <p>The window.matchMedia API </p>
+                            <p>The window.matchMedia API allows you to test a particular media query and add event listeners </p>
                             <pre>var mql = window.matchMedia("(max-width:768px)");
 mql.addListener(function(e){
         if(e.matches){
@@ -67,23 +68,31 @@ mql.addListener(function(e){
         }
 });</pre>
                             <h4>Browser support</h4>
-                            <ul>
-                                <li>IE10+</li>
-                                <li>Chrome 9+</li>
-                                <li>Firefox 6+</li>
-                                <li>Safari 5.1+</li>
-                                <li>Android 3+</li>
+                            <ul class="browser-support clearfix">
+                                <li class="ie">IE10+</li>
+                                <li class="chrome">Chrome 9+</li>
+                                <li class="firefox">Firefox 6+</li>
+                                <li class="safari">Safari 5.1+</li>
+                                <li class="opera">Opera 17+</li>
                             </ul>
                         </div>
                         <div class="col-sm-6">
                             <h3>window.onResize</h3>
-                            <p>The window.matchMedia API </p>
+                            <p>The window.onResize method runs whenever the browser is resized by the user.</p>
                             <pre>$(window).on('resize', function(){
         if ($('body').width() < 768) {
                 console.log('mobile');
         }
 });
  </pre>
+                            <h4>Browser support</h4>
+                            <ul class="browser-support clearfix">
+                                <li class="ie">IE</li>
+                                <li class="chrome">Chrome</li>
+                                <li class="firefox">Firefox</li>
+                                <li class="safari">Safari</li>
+                                <li class="opera">Opera</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

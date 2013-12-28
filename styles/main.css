@@ -7629,7 +7629,7 @@ td.visible-print {
   }
 }
 /* line 6, main.scss */
-body {
+h1, h2, h3 {
   text-align: center;
 }
 
@@ -7701,4 +7701,38 @@ ul li {
 /* line 68, main.scss */
 pre {
   text-align: left;
+}
+
+/* line 72, main.scss */
+ul.browser-support {
+  margin-top: 0px;
+}
+/* line 75, main.scss */
+ul.browser-support li {
+  float: left;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 50px;
+  width: 50px;
+  background: url("../images/browsers.png") 0 0 no-repeat;
+}
+/* line 83, main.scss */
+ul.browser-support li.chrome {
+  background-position: 0 0;
+}
+/* line 87, main.scss */
+ul.browser-support li.firefox {
+  background-position: -50px 0;
+}
+/* line 91, main.scss */
+ul.browser-support li.ie {
+  background-position: -100px 0;
+}
+/* line 95, main.scss */
+ul.browser-support li.opera {
+  background-position: -150px 0;
+}
+/* line 99, main.scss */
+ul.browser-support li.safari {
+  background-position: -200px 0;
 }
