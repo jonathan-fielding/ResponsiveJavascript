@@ -7628,82 +7628,232 @@ td.visible-print {
     display: none !important;
   }
 }
-/* line 6, main.scss */
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+/* line 7, _partials/_github.scss */
+pre code {
+  display: block;
+  padding: 0.5em;
+  color: #333;
+  background: ghostwhite;
+}
+
+/* line 16, _partials/_github.scss */
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+  color: #998;
+  font-style: italic;
+}
+
+/* line 28, _partials/_github.scss */
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .nginx .title,
+pre .subst,
+pre .request,
+pre .status {
+  color: #333;
+  font-weight: bold;
+}
+
+/* line 35, _partials/_github.scss */
+pre .number,
+pre .hexcolor,
+pre .ruby .constant {
+  color: #099;
+}
+
+/* line 42, _partials/_github.scss */
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+  color: #dd1144;
+}
+
+/* line 49, _partials/_github.scss */
+pre .title,
+pre .id,
+pre .coffeescript .params,
+pre .scss .preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+/* line 57, _partials/_github.scss */
+pre .javascript .title,
+pre .lisp .title,
+pre .clojure .title,
+pre .subst {
+  font-weight: normal;
+}
+
+/* line 64, _partials/_github.scss */
+pre .class .title,
+pre .haskell .type,
+pre .vhdl .literal,
+pre .tex .command {
+  color: #458;
+  font-weight: bold;
+}
+
+/* line 72, _partials/_github.scss */
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+/* line 79, _partials/_github.scss */
+pre .attribute,
+pre .variable,
+pre .lisp .body {
+  color: teal;
+}
+
+/* line 83, _partials/_github.scss */
+pre .regexp {
+  color: #009926;
+}
+
+/* line 87, _partials/_github.scss */
+pre .class {
+  color: #458;
+  font-weight: bold;
+}
+
+/* line 96, _partials/_github.scss */
+pre .symbol,
+pre .ruby .symbol .string,
+pre .lisp .keyword,
+pre .tex .special,
+pre .prompt {
+  color: #990073;
+}
+
+/* line 102, _partials/_github.scss */
+pre .built_in,
+pre .lisp .title,
+pre .clojure .built_in {
+  color: #0086b3;
+}
+
+/* line 111, _partials/_github.scss */
+pre .preprocessor,
+pre .pragma,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+/* line 116, _partials/_github.scss */
+pre .deletion {
+  background: #ffdddd;
+}
+
+/* line 120, _partials/_github.scss */
+pre .addition {
+  background: #ddffdd;
+}
+
+/* line 124, _partials/_github.scss */
+pre .diff .change {
+  background: #0086b3;
+}
+
+/* line 128, _partials/_github.scss */
+pre .chunk {
+  color: #aaaaaa;
+}
+
+/* line 7, main.scss */
 h1, h2, h3 {
   text-align: center;
 }
 
-/* line 10, main.scss */
+/* line 11, main.scss */
 footer {
   padding: 20px 0;
 }
-/* line 13, main.scss */
+/* line 14, main.scss */
 footer p {
   margin-bottom: 0px;
 }
 
-/* line 18, main.scss */
+/* line 19, main.scss */
 .navbar {
   margin-bottom: 0px;
 }
 
-/* line 22, main.scss */
+/* line 23, main.scss */
 .jumbotron {
   text-align: center;
   background: #c45268;
   color: #fff;
   margin-bottom: 0px;
 }
-/* line 28, main.scss */
+/* line 29, main.scss */
 .jumbotron h1 {
   font-weight: normal;
 }
-/* line 32, main.scss */
+/* line 33, main.scss */
 .jumbotron .lead {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
-/* line 37, main.scss */
+/* line 38, main.scss */
 .nav-center {
   float: none;
   text-align: center;
 }
-/* line 41, main.scss */
+/* line 42, main.scss */
 .nav-center li {
   float: none;
   display: inline-block;
 }
 
-/* line 47, main.scss */
+/* line 48, main.scss */
 .odd-panel {
   background: #FAF0F2;
   border-top: 1px solid #edcad1;
   padding-bottom: 20px;
 }
 
-/* line 53, main.scss */
+/* line 54, main.scss */
 .even-panel {
   background: #edcad1;
   border-top: 1px solid #edcad1;
   padding-bottom: 20px;
 }
 
-/* line 59, main.scss */
+/* line 60, main.scss */
 pre {
   text-align: left;
 }
 
-/* line 63, main.scss */
+/* line 64, main.scss */
 ul.browser-support {
   margin-top: 0px;
   padding: 0;
   margin: 0 0 20px;
 }
-/* line 68, main.scss */
+/* line 69, main.scss */
 ul.browser-support li {
   list-style: none;
 }
-/* line 72, main.scss */
+/* line 73, main.scss */
 ul.browser-support li {
   float: left;
   font-size: 12px;
@@ -7712,34 +7862,34 @@ ul.browser-support li {
   width: 50px;
   background: url("../images/browsers.png") 0 0 no-repeat;
 }
-/* line 80, main.scss */
+/* line 81, main.scss */
 ul.browser-support li.chrome {
   background-position: 0 0;
 }
-/* line 84, main.scss */
+/* line 85, main.scss */
 ul.browser-support li.firefox {
   background-position: -50px 0;
 }
-/* line 88, main.scss */
+/* line 89, main.scss */
 ul.browser-support li.ie {
   background-position: -100px 0;
 }
-/* line 92, main.scss */
+/* line 93, main.scss */
 ul.browser-support li.opera {
   background-position: -150px 0;
 }
-/* line 96, main.scss */
+/* line 97, main.scss */
 ul.browser-support li.safari {
   background-position: -200px 0;
 }
 
 @media (max-width: 767px) {
-  /* line 104, main.scss */
+  /* line 105, main.scss */
   .navbar {
     display: none;
   }
 
-  /* line 108, main.scss */
+  /* line 109, main.scss */
   pre {
     font-size: 10px;
   }

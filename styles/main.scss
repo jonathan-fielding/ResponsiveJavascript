@@ -2,6 +2,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import "_partials/variables";
 @import '../bower_components/sass-bootstrap/lib/bootstrap';
+@import "_partials/github";
 
 h1, h2, h3{
     text-align: center;
