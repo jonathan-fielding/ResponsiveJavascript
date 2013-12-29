@@ -7889,9 +7889,9 @@ ul.browser-support li.safari {
     font-size: 10px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   /* line 111, main.scss */
-  span.visible-lg {
-    display: inline !important;
+  .navbar .hidden-xs {
+    display: inline-block !important;
   }
 }

@@ -107,8 +107,8 @@ ul.browser-support{
     }
 }
 
-@media (min-width: $screen-lg-min){
-    span.visible-lg{
-        display: inline!important;
+@media (min-width: $screen-sm-min){
+    .navbar .hidden-xs{
+        display: inline-block!important;
     }
 }
