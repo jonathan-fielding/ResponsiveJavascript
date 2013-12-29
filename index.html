@@ -61,7 +61,10 @@
                         <div class="col-sm-6">
                             <h3>window.matchMedia</h3>
                             <p>The window.matchMedia API allows you to test a particular media query and add an event listener for when it is matched or unmatched.</p>
-                            <pre>var mql = window.matchMedia("(max-width:768px)");
+                            <pre>//Prepare a MediaQueryList
+var mql = window.matchMedia("(max-width:768px)");
+
+//Add a listener to the MediaQueryList
 mql.addListener(function(e){
         if(e.matches){
                 console.log('enter mobile');
@@ -95,11 +98,8 @@ mql.addListener(function(e){
 };
 
 //Attach event for resizing
-if (window.attachEvent) {
-    window.attachEvent("onresize", resizeMethod);
-} else if (window.addEventListener) {
-    window.addEventListener("resize", resizeMethod, true);
-}</pre>
+window.addEventListener("resize", resizeMethod, true);
+</pre>
                             <h4>Methodology</h4>
                             <ul>
                                 <li>Add event to window.onresize</li>
