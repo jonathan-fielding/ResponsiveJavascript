@@ -100,13 +100,15 @@ ul.browser-support{
     }
 }
 
-
 @media (max-width: $screen-xs-max){
-   .navbar{
-        display: none;
-    }
 
     pre{
         font-size: 10px;
+    }
+}
+
+@media (min-width: $screen-lg-min){
+    span.visible-lg{
+        display: inline!important;
     }
 }

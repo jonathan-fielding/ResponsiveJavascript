@@ -7885,12 +7885,13 @@ ul.browser-support li.safari {
 
 @media (max-width: 767px) {
   /* line 105, main.scss */
-  .navbar {
-    display: none;
-  }
-
-  /* line 109, main.scss */
   pre {
     font-size: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 111, main.scss */
+  span.visible-lg {
+    display: inline !important;
   }
 }
