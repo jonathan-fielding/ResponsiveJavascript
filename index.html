@@ -89,8 +89,8 @@ mql.addListener(function(e){
                             <p>* polyfill avaliable to add support for older browsers</p>
                         </div>
                         <div class="col-sm-6">
-                            <h3>window.onResize</h3>
-                            <p>The window.onResize method runs whenever the browser is resized by the user. As the window.onresize API has been arround as part of the browsers for a long time it is likely you have used it before however with responsive javascript we will be simply using it to run any javascript handling the change between browser states.</p>
+                            <h3>window.onresize</h3>
+                            <p>The window.onresize method runs whenever the browser is resized by the user so can be used to detect changes to the viewport size. As this is the most common way we may want to differentiate our javascript across responsive states this works great for writing our responsive javascript. As the window.onresize API has been arround as part of the browsers for a long time it is likely you have used it before however with responsive javascript we will be simply using it to run any javascript handling the change between browser states.</p>
                             <pre>var resizeMethod = function(){
     if (document.body.clientWidth < 768) {
         console.log('mobile');
