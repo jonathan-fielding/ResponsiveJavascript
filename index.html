@@ -60,13 +60,20 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <h3>window.matchMedia</h3>
-                            <p>The window.matchMedia API allows you to test a particular media query and add event listeners </p>
+                            <p>The window.matchMedia API allows you to test a particular media query and add an event listener for when it is matched or unmatched.</p>
                             <pre>var mql = window.matchMedia("(max-width:768px)");
 mql.addListener(function(e){
         if(e.matches){
                 console.log('enter mobile');
         }
 });</pre>
+                            <h4>Methodology</h4>
+                            <ul>
+                                <li>Prepare a MediaQueryList by using a media query with window.matchMedia</li>
+                                <li>Add listener to MatchQueryList</li>
+                                <li>When listener fires check if its a match or unmatch</li>
+                            </ul>
+
                             <h4>Browser support</h4>
                             <ul class="browser-support clearfix">
                                 <li class="ie">IE10+</li>
@@ -78,13 +85,20 @@ mql.addListener(function(e){
                         </div>
                         <div class="col-sm-6">
                             <h3>window.onResize</h3>
-                            <p>The window.onResize method runs whenever the browser is resized by the user.</p>
+                            <p>The window.onResize method runs whenever the browser is resized by the user. As the window.onresize API has been arround as part of the browsers for a long time it is likely you have used it before however with responsive javascript we will be simply using it to run any javascript handling the change between browser states.</p>
                             <pre>$(window).on('resize', function(){
         if ($('body').width() < 768) {
                 console.log('mobile');
         }
 });
  </pre>
+                            <h4>Methodology</h4>
+                            <ul>
+                                <li>Add event to window.onresize</li>
+                                <li>Use conditional statements to detect current width of browser</li>
+                                <li>Add debounce to resize event to prevent it firing excessively</li>
+                            </ul>
+
                             <h4>Browser support</h4>
                             <ul class="browser-support clearfix">
                                 <li class="ie">IE</li>

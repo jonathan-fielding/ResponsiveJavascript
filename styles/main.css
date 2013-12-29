@@ -7689,25 +7689,21 @@ footer p {
 }
 
 /* line 59, main.scss */
-ul {
-  padding: 0;
-  margin: 20px 0;
-}
-/* line 63, main.scss */
-ul li {
-  list-style: none;
-}
-
-/* line 68, main.scss */
 pre {
   text-align: left;
 }
 
-/* line 72, main.scss */
+/* line 63, main.scss */
 ul.browser-support {
   margin-top: 0px;
+  padding: 0;
+  margin: 0 0 20px;
 }
-/* line 75, main.scss */
+/* line 68, main.scss */
+ul.browser-support li {
+  list-style: none;
+}
+/* line 72, main.scss */
 ul.browser-support li {
   float: left;
   font-size: 12px;
@@ -7716,23 +7712,23 @@ ul.browser-support li {
   width: 50px;
   background: url("../images/browsers.png") 0 0 no-repeat;
 }
-/* line 83, main.scss */
+/* line 80, main.scss */
 ul.browser-support li.chrome {
   background-position: 0 0;
 }
-/* line 87, main.scss */
+/* line 84, main.scss */
 ul.browser-support li.firefox {
   background-position: -50px 0;
 }
-/* line 91, main.scss */
+/* line 88, main.scss */
 ul.browser-support li.ie {
   background-position: -100px 0;
 }
-/* line 95, main.scss */
+/* line 92, main.scss */
 ul.browser-support li.opera {
   background-position: -150px 0;
 }
-/* line 99, main.scss */
+/* line 96, main.scss */
 ul.browser-support li.safari {
   background-position: -200px 0;
 }
