@@ -7732,3 +7732,15 @@ ul.browser-support li.opera {
 ul.browser-support li.safari {
   background-position: -200px 0;
 }
+
+@media (max-width: 767px) {
+  /* line 104, main.scss */
+  .navbar {
+    display: none;
+  }
+
+  /* line 108, main.scss */
+  pre {
+    font-size: 10px;
+  }
+}
