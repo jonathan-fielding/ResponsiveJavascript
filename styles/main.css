@@ -7883,14 +7883,20 @@ ul.browser-support li.safari {
   background-position: -200px 0;
 }
 
+/* line 103, main.scss */
+img.centered {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 767px) {
-  /* line 105, main.scss */
+  /* line 110, main.scss */
   pre {
     font-size: 10px;
   }
 }
 @media (min-width: 768px) {
-  /* line 111, main.scss */
+  /* line 116, main.scss */
   .navbar .hidden-xs {
     display: inline-block !important;
   }
