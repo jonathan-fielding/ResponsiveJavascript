@@ -128,9 +128,14 @@ window.addEventListener("resize", resizeMethod, true);
                         <div class="col-sm-6">
                             <h3>SimpleStateManager</h3>
                             <img src="images/ssm.png" alt="SimpleStateManager Logo" class="centered lib-image" width="240" height="240" />
+                            <p>SimpleStateManager is a responsive state manager which allows you to target different javascript towards different states of your site. It allows you to define as many states as your site requires and allows you to have independent Enter, Leave and Resize events for each of the states.</p>
+                            
+                            <h4>Key features</h4>
                             <ul>
                                 <li>Uses browser on resize event</li>
-                                <li>Add your own tests and respond to anything js can test for</li>
+                                <li>Debug your states using the SSM debug panel</li>
+                                <li>Write your own tests so you can test for anything javascript can test for</li>
+                                <li>Extend with plugins</li>
                             </ul>
 
                             <h4>Methodology</h4>
@@ -152,6 +157,9 @@ window.addEventListener("resize", resizeMethod, true);
                         <div class="col-sm-6">
                             <h3>enquire.js</h3>
                             <img src="images/enquirejs.png" alt="Enquire.js Logo" class="centered lib-image" width="240" height="240" />
+                            <p>Enquire.js is a javascript library which enables you to make your javascript respond to CSS media queries.</p>
+
+                            <h4>Key features</h4>
                             <ul>
                                 <li>Uses matchMedia API</li>
                                 <li>Manages registering and unregistering</li>
@@ -173,8 +181,34 @@ window.addEventListener("resize", resizeMethod, true);
                         <div class="col-sm-6">
                             <h3>yepnope.js</h3>
                             <img src="images/yepnope-logo.png" alt="Enquire.js Logo" class="centered lib-image" width="240" height="240" />
-                            <p>yepnope is an asynchronous conditional resource loader, it allows you to load only the scripts that your users needs.</p>
+                            <p>yepnope.js is an asynchronous conditional resource loader, it allows you to load only the scripts that your users needs.</p>
 
+                            <h4>Example usage</h4>
+                            <pre>yepnope({
+  test : Modernizr.geolocation,
+  yep  : 'normal.js',
+  nope : ['polyfill.js', 'wrapper.js']
+});</pre>
+                            <!-- <h4>Browser support</h4>
+                            <ul class="browser-support clearfix">
+                                <li class="ie">IE10<sup>*</sup>+</li>
+                                <li class="chrome">Chrome 9+</li>
+                                <li class="firefox">Firefox 6+</li>
+                                <li class="safari">Safari 5.1+</li>
+                                <li class="opera">Opera 17+</li>
+                            </ul> -->
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>Modernizr</h3>
+                            <img src="images/modernizr.png" alt="Enquire.js Logo" class="centered lib-image" width="240" height="240" />
+                            <p>Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.</p>
+
+                            <h4>Example usage</h4>
+                            <pre>yepnope({
+  test : Modernizr.geolocation,
+  yep  : 'normal.js',
+  nope : ['polyfill.js', 'wrapper.js']
+});</pre>
                             <!-- <h4>Browser support</h4>
                             <ul class="browser-support clearfix">
                                 <li class="ie">IE10<sup>*</sup>+</li>
