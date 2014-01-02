@@ -7900,14 +7900,19 @@ h4.centered {
   margin: 20px auto !important;
 }
 
+/* line 118, main.scss */
+.libraries h3 {
+  text-align: left;
+}
+
 @media (max-width: 767px) {
-  /* line 119, main.scss */
+  /* line 125, main.scss */
   pre {
     font-size: 10px;
   }
 }
 @media (min-width: 768px) {
-  /* line 125, main.scss */
+  /* line 131, main.scss */
   .navbar .hidden-xs {
     display: inline-block !important;
   }
