@@ -7889,14 +7889,25 @@ img.centered {
   margin: 0 auto;
 }
 
+/* line 108, main.scss */
+h4.centered {
+  text-align: center;
+}
+
+/* line 112, main.scss */
+.lib-image {
+  border: 1px dashed #edcad1;
+  margin: 20px auto !important;
+}
+
 @media (max-width: 767px) {
-  /* line 110, main.scss */
+  /* line 119, main.scss */
   pre {
     font-size: 10px;
   }
 }
 @media (min-width: 768px) {
-  /* line 116, main.scss */
+  /* line 125, main.scss */
   .navbar .hidden-xs {
     display: inline-block !important;
   }

@@ -105,6 +105,15 @@ img.centered{
     margin: 0 auto;
 }
 
+h4.centered{
+    text-align: center;
+}
+
+.lib-image{
+    border: 1px dashed #edcad1;
+    margin: 20px auto!important;
+}
+
 @media (max-width: $screen-xs-max){
 
     pre{
