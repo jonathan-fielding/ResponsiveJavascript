@@ -7904,15 +7904,21 @@ h4.centered {
 .libraries h3 {
   text-align: left;
 }
+/* line 122, main.scss */
+.libraries .row-spacing-bottom {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #edcad1;
+}
 
 @media (max-width: 767px) {
-  /* line 125, main.scss */
+  /* line 131, main.scss */
   pre {
     font-size: 10px;
   }
 }
 @media (min-width: 768px) {
-  /* line 131, main.scss */
+  /* line 137, main.scss */
   .navbar .hidden-xs {
     display: inline-block !important;
   }
