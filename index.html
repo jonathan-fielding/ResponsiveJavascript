@@ -218,13 +218,11 @@ window.addEventListener("resize", resizeMethod, true);
                         <div class="col-sm-8">
                             <h3>Modernizr</h3>
                             <p>Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.</p>
+                            <p>One of Modernizr's less known features is its ability to test media queries using the method <code>Modernizr.mq(str)</code>.</p>
 
-                            <!-- <h4>Example usage</h4>
-                            <pre>yepnope({
-  test : Modernizr.geolocation,
-  yep  : 'normal.js',
-  nope : ['polyfill.js', 'wrapper.js']
-});</pre> -->
+                            <h4>Example usage</h4>
+                            <pre>//Returns true or false
+Modernizr.mq('only all and (max-width: 767px)')</pre>
                             <!-- <h4>Browser support</h4>
                             <ul class="browser-support clearfix">
                                 <li class="ie">IE10<sup>*</sup>+</li>
