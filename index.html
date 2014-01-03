@@ -24,9 +24,9 @@
                 <div class="container">
                    <div>
                         <ul class="nav navbar-nav nav-center">
-                            <li class="active hidden-xs"><a href="#">What is responsive javascript?</a></li>
+                            <li class="hidden-xs"><a href="#">What is responsive javascript?</a></li>
                             <li class="hidden-xs"><a href="#">What are the API's?</a></li>
-                            <li class="hidden-xs"><a href="#">Is their libraries?</a></li>
+                            <li class="hidden-xs"><a href="#">Are their libraries?</a></li>
                             <li class="hidden-xs"><a href="#">Where can I find out more?</a></li>
                             <li><a href="http://twitter.com/home?status=Learn%20about%20%23ResponsiveJavascript%20http://www.responsivejavascript.com" target="_blank">Tweet #ResponsiveJavascript</a></li>
                         </ul>
@@ -52,13 +52,14 @@
                 </div>
             </div>
 
-            <div class="even-panel">
+            <div class="even-panel apis">
                 <div class="container">
-                    <h2>What are the Browser API's?</h2>
-                    <p class="text-center">The browsers provide us with 2 key API's which allow us to add javascript to our site that can be responsive, they are the window.matchMedia API and the window.onresize API.</p>
-
-                    <div class="row">
-                        <div class="col-sm-6">
+                    <div class="row row-spacing-bottom">
+                        <h2 class="col-sm-12">What are the Browser API's?</h2>
+                        <p class="text-center col-sm-12">The browsers provide us with 2 key API's which allow us to add javascript to our site that can be responsive, they are the window.matchMedia API and the window.onresize API.</p>
+                    </div>
+                    <div class="row row-spacing-bottom">
+                        <div class="col-sm-12">
                             <h3>window.matchMedia</h3>
                             <p>The window.matchMedia API allows you to test a particular media query and add an event listener for when it is matched or unmatched. The benefit of this being that we can use the same media queries in the javascript as we have used in our javascript. The disadvantage being that we are limited to only test for things that media queries can test for.</p>
                             <pre>//Prepare a MediaQueryList
@@ -88,9 +89,12 @@ mql.addListener(function(e){
 
                             <p>* polyfill avaliable to add support for older browsers</p>
                         </div>
-                        <div class="col-sm-6">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
                             <h3>window.onresize</h3>
-                            <p>The window.onresize method runs whenever the browser is resized by the user so can be used to detect changes to the viewport size. As this is the most common way we may want to differentiate our javascript across responsive states this works great for writing our responsive javascript. As the window.onresize API has been arround as part of the browsers for a long time it is likely you have used it before however with responsive javascript we will be simply using it to run any javascript handling the change between browser states.</p>
+                            <p>The window.onresize method runs whenever the browser is resized by the user so can be used to detect changes to the viewport size. As this is the most common way we may want to differentiate our javascript across responsive states this works great for writing our responsive javascript.</p>
+                            <p>As the window.onresize API has been arround as part of the browsers for a long time it is likely you have used it before however with responsive javascript we will be simply using it to run any javascript handling the change between browser states.</p>
                             <pre>var resizeMethod = function(){
     if (document.body.clientWidth < 768) {
         console.log('mobile');
@@ -121,7 +125,7 @@ window.addEventListener("resize", resizeMethod, true);
             </div>
             <div class="odd-panel libraries">
                 <div class="container">
-                    <h2>Is their libraries?</h2>
+                    <h2>Are their libraries?</h2>
                     <p class="text-center">There are a couple of popular libraries which can be used for responsive javascript</p>
 
                     <div class="row row-spacing-bottom">
