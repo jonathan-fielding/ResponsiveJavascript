@@ -1,5 +1,6 @@
 # Responsive Javascript
 
+This is a community driven site, feel free to contribute
 
 ## License
 
